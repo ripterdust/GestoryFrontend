@@ -1,5 +1,8 @@
+import { BrowserRouter } from "react-router-dom"
 import { MainRouter } from "./router/MainRouter"
 
 export const App : React.FC = () => {
-  return <MainRouter />
+  return <BrowserRouter>
+    <MainRouter />
+  </BrowserRouter>
 }
