@@ -1,7 +1,5 @@
 import { MainRouter } from "./router/MainRouter"
 
-function App() {
+export const App : React.FC = () => {
   return <MainRouter />
 }
-
-export default App
