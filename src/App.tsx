@@ -1,5 +1,7 @@
+import { MainRouter } from "./router/MainRouter"
+
 function App() {
-  return <div></div>
+  return <MainRouter />
 }
 
 export default App
