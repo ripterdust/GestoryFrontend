@@ -5,7 +5,7 @@ import cover from '../assets/cover.jpg';
 
 export const MainPage: React.FC = () => {
     return (
-        <div>
+        <div className="mainpage container">
             <div className="cover">
                 <img src={cover} alt="" />
             </div>
