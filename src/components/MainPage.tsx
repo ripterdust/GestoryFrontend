@@ -8,7 +8,7 @@ import coverMan from '../assets/coverMan.jpg';
 export const MainPage: React.FC = () => {
     return (
         <div className="container">
-            <div className="mainpage">
+            <div className="mainpage animate__animated animate__fadeInUp">
                 <Link to={'/woman'} className="cover">
                     <img src={coverWoman} alt="Woman photo" />
                     <div className="overlay"></div>
