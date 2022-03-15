@@ -11,6 +11,7 @@ export const MainPage: React.FC = () => {
                 <Link to={'/woman'} className="cover">
                     <img src={cover} alt="" />
                     <div className="overlay"></div>
+                    <div className="text">Womans clothes</div>
                 </Link>
             </div>
         </div>
