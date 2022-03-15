@@ -10,6 +10,7 @@ export const MainPage: React.FC = () => {
             <div className="mainpage">
                 <Link to={'/woman'} className="cover">
                     <img src={cover} alt="" />
+                    <div className="overlay"></div>
                 </Link>
             </div>
         </div>
