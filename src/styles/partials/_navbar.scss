@@ -2,10 +2,34 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    height: 2em;
     position: sticky;
     top: 0;
     left: 0;
+    padding: 1.5em 0;
+    .utils {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .user {
+            margin-right: 1em;
+            position: relative;
+            .menu {
+                display: none;
+                position: absolute;
+                bottom: -100%;
+                transform: translateY(100%);
+                left: 0;
+                .option {
+                    padding: 0.5em 1em;
+                }
+            }
+
+            &:hover .menu {
+                display: block;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
