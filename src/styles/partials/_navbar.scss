@@ -6,6 +6,15 @@ nav {
     top: 0;
     left: 0;
     padding: 1.5em 0;
+
+    .categories {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
     .utils {
         align-items: center;
         display: flex;
