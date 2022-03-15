@@ -7,7 +7,6 @@ export const MainRouter : React.FC = () => {
     
     
     return <div>
-
         <Nav />
         <Routes>
             <Route path='/' element={<MainPage />} />

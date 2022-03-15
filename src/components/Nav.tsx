@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 
 export const Nav = () => {
-  return (
-    <div>Nav</div>
-  )
+  return <nav>
+      <Link to={'/'}><i className="fa-solid fa-bag-shopping"></i></Link>
+  </nav>
 }
