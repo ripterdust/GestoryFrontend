@@ -1,2 +1,27 @@
 nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 2em;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        & .categories,
+        & .utils {
+            display: none;
+        }
+        & .responsive {
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    nav {
+        & .responsive {
+            display: none;
+        }
+    }
 }

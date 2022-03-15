@@ -24,6 +24,26 @@ export const Nav = () => {
                     <i className="fa-solid fa-basket-shopping"></i>
                 </div>
             </div>
+            <div className="responsive">
+                <div className="categories-responsive">
+                    <Link to={'/men'}>men</Link>
+                    <Link to={'/woman'}>Woman</Link>
+                    <Link to={'/kids'}>kids</Link>
+                </div>
+                <div className="utils-responsinve">
+                    <div className="user">
+                        <i className="fa-solid fa-user"></i>
+                        <div className="menu">
+                            <div className="option">HOla</div>
+                            <div className="option">HOla</div>
+                            <div className="option">HOla</div>
+                        </div>
+                    </div>
+                    <div className="cart">
+                        <i className="fa-solid fa-basket-shopping"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
     );
 };
