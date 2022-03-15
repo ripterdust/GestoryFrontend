@@ -6,7 +6,11 @@ export const Nav = () => {
             <Link to={'/'} className="logo">
                 <i className="fa-solid fa-bag-shopping"></i>
             </Link>
-            <div className="categories"></div>
+            <div className="categories">
+                <Link to={'/men'}>men</Link>
+                <Link to={'/woman'}>Woman</Link>
+                <Link to={'/kids'}>kids</Link>
+            </div>
             <div className="utils">
                 <div className="user">
                     <i className="fa-solid fa-user"></i>
