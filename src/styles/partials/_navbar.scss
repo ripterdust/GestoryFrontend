@@ -7,6 +7,11 @@ nav {
     left: 0;
     padding: 1.5em 0;
 
+    .logo {
+        i {
+            font-size: 30px;
+        }
+    }
     .categories {
         width: 30%;
         display: flex;
@@ -21,6 +26,9 @@ nav {
         display: flex;
         justify-content: center;
 
+        i {
+            font-size: 20px;
+        }
         .user {
             margin-right: 1em;
             position: relative;
