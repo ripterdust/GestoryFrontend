@@ -1,11 +1,16 @@
-import { useState } from "react";
+import {  useEffect, useState } from "react";
 
-export const useFetch = ( url : string ) : Array<object> => {
+export const useFetch = async ( url : string )  => {
 
-    const [state, setState] = useState([]);
+    const [ state, setState] = useState([]);
 
-    const data = fetch(url);
-    console.log(data)
+    useEffect(() => {
+        fetch( url )
+            .then(response => response.json())
+            .then(data => setState(data))
+        
+    }, [url])
+   
+    return [ state ];
 
-    return []
 }
