@@ -16,6 +16,6 @@ export const MainPage : React.FC = () => {
 
 
   return (
-    <div>MainPageasdf</div>
+    <div>Main</div>
   )
 }
