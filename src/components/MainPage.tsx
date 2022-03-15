@@ -5,9 +5,11 @@ import cover from '../assets/cover.jpg';
 
 export const MainPage: React.FC = () => {
     return (
-        <div className="mainpage container">
-            <div className="cover">
-                <img src={cover} alt="" />
+        <div className="container">
+            <div className="mainpage">
+                <div className="cover">
+                    <img src={cover} alt="" />
+                </div>
             </div>
         </div>
     );
