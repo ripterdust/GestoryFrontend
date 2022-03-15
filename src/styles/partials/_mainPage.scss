@@ -24,9 +24,13 @@
                 background: $overlay;
                 z-index: 1;
             }
+            &:hover img {
+                width: 110%;
+            }
             img {
                 width: 100%;
                 object-fit: fill;
+                transition: 0.3s ease-in-out;
                 z-index: -1;
             }
             .text {
