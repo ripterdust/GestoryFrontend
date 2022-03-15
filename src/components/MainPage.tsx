@@ -14,6 +14,13 @@ export const MainPage: React.FC = () => {
                     <div className="text">Womans clothes</div>
                 </Link>
             </div>
+            <div className="mainpage">
+                <Link to={'/woman'} className="cover">
+                    <img src={cover} alt="" />
+                    <div className="overlay"></div>
+                    <div className="text">Womans clothes</div>
+                </Link>
+            </div>
         </div>
     );
 };
