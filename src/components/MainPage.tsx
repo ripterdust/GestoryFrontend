@@ -6,8 +6,9 @@ import cover from '../assets/cover.jpg';
 export const MainPage: React.FC = () => {
     return (
         <div>
-            .
-            <img src={cover} alt="" />
+            <div className="cover">
+                <img src={cover} alt="" />
+            </div>
         </div>
     );
 };
