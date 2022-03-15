@@ -3,7 +3,7 @@
     overflow: hidden;
 
     .cover {
-        width: 80%;
+        width: 90%;
         height: 70vh;
         overflow: hidden;
         margin: auto;
@@ -21,7 +21,7 @@
         }
         img {
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
             z-index: -1;
         }
         .text {
