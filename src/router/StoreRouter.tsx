@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { MainPage } from '../components/MainPage';
 import { Nav } from '../components/Nav';
-import { Login } from '../components/Login';
 import { Men } from '../components/Men';
 import { Woman } from '../components/Woman';
 import { Kids } from '../components/Kids';
