@@ -1,10 +1,21 @@
 import { useEffect, useState } from 'react';
 
 export const useFetch = (url: string) => {
-    const [state, setState] = useState({
-        data: {},
-        err: false,
-    });
+    interface responseType {
+        data: {
+            err: any;
+            data: object;
+        };
+    }
+
+    const response: responseType = {
+        data: {
+            err: false,
+            data: {},
+        },
+    };
+
+    const [state, setState] = useState(response);
 
     useEffect(() => {
         fetch(url)
@@ -19,7 +30,7 @@ export const useFetch = (url: string) => {
                 });
             })
             .catch((err) => {
-                setState((state) => {
+                setState((state: any) => {
                     return {
                         ...state,
                         data: {
