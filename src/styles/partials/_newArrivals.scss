@@ -22,7 +22,7 @@
         grid-template-columns: repeat(4, 1fr);
         column-gap: 3em;
         padding: 1em;
-        grid-template-rows: 55vh;
+        grid-template-rows: repeat(2, 60vh);
         row-gap: 2em;
         .productCard {
             overflow: hidden;
@@ -54,7 +54,7 @@
                 img {
                     transition: 0.3s ease-in-out;
                     width: 100%;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
         }
