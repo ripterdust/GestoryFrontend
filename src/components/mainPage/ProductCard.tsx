@@ -19,5 +19,9 @@ export type props = {
 export const ProductCard: React.FC<props> = (dataProp) => {
     const { data } = dataProp;
 
-    return <Link to={`/product/${data?.id}`}>Product</Link>;
+    return (
+        <Link to={`/product/${data?.id}`}>
+            <img src={`data:image/jpeg;base64,${data?.productImage}`} alt="" />
+        </Link>
+    );
 };
