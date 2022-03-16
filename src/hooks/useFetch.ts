@@ -22,7 +22,7 @@ export const useFetch = (url: string) => {
                 setState((state) => {
                     return {
                         ...state,
-                        err: true,
+                        err: err,
                     };
                 });
             });
