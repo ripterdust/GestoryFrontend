@@ -10,7 +10,7 @@ export const Login = () => {
                 </div>
                 <div className="subtitle">Sign in to continue</div>
                 <form action="">
-                    <div className="form-group">
+                    <div className="form-group mb">
                         <i className="fa-solid fa-envelope"></i>
                         <input
                             type="email"
@@ -30,8 +30,10 @@ export const Login = () => {
                             id=""
                         />
                     </div>
+                    <div className="forgot mb">
+                        <Link to={'/forgot'}>Forgot password?</Link>
+                    </div>
                     <button type="submit">Login</button>
-                    <Link to={'/forgot'}>Forgot password?</Link>
                 </form>
                 <Link to={'/register'}>Create an account.</Link>
             </div>

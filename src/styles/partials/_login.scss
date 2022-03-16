@@ -48,9 +48,9 @@
             .form-group {
                 width: 100%;
                 position: relative;
-                margin-bottom: 1em;
                 input {
                     width: 100%;
+                    max-width: calc(100% - 3em);
                     height: 3em;
                     padding-left: 3em;
                     border-radius: 0.5em;
@@ -65,7 +65,18 @@
                     color: #333;
                 }
             }
-
+            .mb {
+                margin-bottom: 1em;
+            }
+            .forgot {
+                width: 100%;
+                display: flex;
+                justify-content: right;
+                margin-top: 0.3em;
+                font-weight: 600;
+                color: #333;
+                font-size: 14px;
+            }
             button {
                 width: 50%;
                 border: none;
