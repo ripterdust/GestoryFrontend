@@ -8,12 +8,22 @@ export const Login = () => {
                 </div>
                 <form action="">
                     <div className="form-group">
-                        <label htmlFor="">Email</label>
-                        <input type="email" name="email" id="" />
+                        <i className="fa-solid fa-at"></i>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                            id=""
+                        />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="">Password</label>
-                        <input type="password" name="password" id="" />
+                        <i className="fa-solid fa-key"></i>
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            id=""
+                        />
                     </div>
                     <button type="submit">Login</button>
                 </form>

@@ -26,7 +26,8 @@
                 border-radius: 0.5em;
                 text-transform: lowercase;
                 cursor: pointer;
-
+                width: 70%;
+                margin-top: 1em;
                 &:hover {
                     background: darken($orange, 5%);
                 }
