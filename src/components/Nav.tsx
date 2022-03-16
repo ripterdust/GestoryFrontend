@@ -17,7 +17,7 @@ export const Nav = () => {
                 {login ? (
                     'Bryan'
                 ) : (
-                    <Link to={'login'} className="user">
+                    <Link to={'auth/login'} className="user">
                         <i className="fa-solid fa-user"></i>
                     </Link>
                 )}
