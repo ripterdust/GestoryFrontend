@@ -1,15 +1,25 @@
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
-import { StoreRouter } from './StoreRouter';
-import { AuthRouter } from './AuthRouter';
+import { MainPage } from '../components/MainPage';
+import { Nav } from '../components/Nav';
+import { Login } from '../components/Login';
+import { Men } from '../components/Men';
+import { Woman } from '../components/Woman';
+import { Kids } from '../components/Kids';
 
 export const MainRouter: React.FC = () => {
     return (
         <div>
-            <Routes>
-                <Route path="/" element={<StoreRouter />} />
-                <Route path="/auth" element={<AuthRouter />} />
-            </Routes>
+            <Nav />
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/men" element={<Men />} />
+                    <Route path="/woman" element={<Woman />} />
+                    <Route path="/kids" element={<Kids />} />
+                </Routes>
+            </div>
         </div>
     );
 };
