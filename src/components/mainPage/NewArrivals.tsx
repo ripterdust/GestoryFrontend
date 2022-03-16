@@ -11,7 +11,7 @@ export const NewArrivals = () => {
                 New <span>Arrivals</span>
             </div>
 
-            <div className="grid"></div>
+            <div className="grid">{}</div>
         </div>
     );
 };
