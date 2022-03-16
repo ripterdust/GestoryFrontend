@@ -36,5 +36,21 @@
                 font-weight: 600;
             }
         }
+        .actions {
+            color: $orange;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 2em;
+            button {
+                border: 1px solid $orange;
+                background: white;
+                border-radius: 1em;
+                padding: 1em;
+                font-size: 20px;
+                color: $orange;
+                cursor: pointer;
+                margin-right: 1em;
+            }
+        }
     }
 }

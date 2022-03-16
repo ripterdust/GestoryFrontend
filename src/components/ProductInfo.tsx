@@ -54,7 +54,7 @@ export const ProductInfo = () => {
                 </div>
                 <div className="info">
                     <div className="price">{price}</div>
-                    <div className="quantity">
+                    <div className="actions">
                         <button onClick={() => handleSum(-1)}>-</button>
                         <span>{state.quantity}</span>
                         <button onClick={() => handleSum(1)}>+</button>
