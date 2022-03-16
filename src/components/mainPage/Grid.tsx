@@ -6,7 +6,7 @@ import { ProductCard } from './ProductCard';
 export const Grid = () => {
     const { data } = useFetch(getUrl(''));
     return (
-        <div className="grid">
+        <div className="gridArrivals">
             {data.err ? (
                 <div className="err">Sometimes went wrong</div>
             ) : (
