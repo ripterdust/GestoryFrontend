@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 export const Nav = () => {
+    const login = false;
     return (
         <nav>
             <Link to={'/'} className="logo">
@@ -13,14 +14,14 @@ export const Nav = () => {
                 <Link to={'/kids'}>kids</Link>
             </div>
             <div className="utils">
-                <div className="user">
-                    <i className="fa-solid fa-user"></i>
-                    <div className="menu">
-                        <div className="option">HOla</div>
-                        <div className="option">HOla</div>
-                        <div className="option">HOla</div>
-                    </div>
-                </div>
+                {login ? (
+                    'Bryan'
+                ) : (
+                    <Link to={'login'} className="user">
+                        <i className="fa-solid fa-user"></i>
+                    </Link>
+                )}
+
                 <div className="cart">
                     <i className="fa-solid fa-basket-shopping"></i>
                 </div>
