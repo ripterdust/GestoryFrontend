@@ -10,10 +10,39 @@
         font-weight: 900;
         text-transform: lowercase;
         letter-spacing: 2px;
-        margin-bottom: 5em;
+        margin-bottom: 3em;
 
         span {
             color: $dark;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 3em;
+        padding: 1em;
+        grid-template-rows: 50vh;
+        row-gap: 2em;
+        .productCard {
+            overflow: hidden;
+            .info {
+                height: 2em;
+            }
+            .img {
+                border-radius: 1em;
+                height: calc(100% - 2em);
+                overflow: hidden;
+
+                &:hover img {
+                    transform: scale(1.1);
+                }
+                img {
+                    transition: 0.3s ease-in-out;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

@@ -20,8 +20,17 @@ export const ProductCard: React.FC<props> = (dataProp) => {
     const { data } = dataProp;
 
     return (
-        <Link to={`/product/${data?.id}`}>
-            <img src={`data:image/jpeg;base64,${data?.productImage}`} alt="" />
+        <Link to={`/product/${data?.id}`} className="productCard">
+            <div className="info">
+                <span>{data?.productPrice} </span>
+                <span>{data?.productName}</span>
+            </div>
+            <div className="img">
+                <img
+                    src={`data:image/jpeg;base64,${data?.productImage}`}
+                    alt=""
+                />
+            </div>
         </Link>
     );
 };
