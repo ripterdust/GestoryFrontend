@@ -6,6 +6,8 @@ export const NewArrivals = () => {
             <div className="title">
                 New <span>Arrivals</span>
             </div>
+
+            <div className="grid"></div>
         </div>
     );
 };
