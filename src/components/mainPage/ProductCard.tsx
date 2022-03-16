@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const ProductCard = () => {
+interface props {
+    data?: object;
+}
+export const ProductCard: React.FC<props> = (data) => {
+    console.log(data);
     return <div>ProductCard</div>;
 };

@@ -10,7 +10,9 @@ export const Grid = () => {
             {data.err ? (
                 <div className="err">Sometimes went wrong</div>
             ) : (
-                <ProductCard />
+                data.data.map((product: object, key: number) => (
+                    <ProductCard key={key} data={product} />
+                ))
             )}
         </div>
     );
