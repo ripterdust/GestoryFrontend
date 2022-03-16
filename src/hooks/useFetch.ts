@@ -4,7 +4,7 @@ export const useFetch = (url: string) => {
     interface responseType {
         data: {
             err: any;
-            data: Array<object> | object;
+            data: any;
         };
     }
 

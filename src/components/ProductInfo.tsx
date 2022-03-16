@@ -6,12 +6,11 @@ import { useFetch } from '../hooks/useFetch';
 export const ProductInfo = () => {
     const { id } = useParams();
     const { data: response } = useFetch(getUrl(`product/${id}`));
-    const { data: array } = response;
-    console.log(array);
+    const { data } = response;
 
     return (
         <div className="animate__animated animate__fadeIn productInfo">
-            <div className="title"></div>
+            <div className="title">{data.productName}</div>
         </div>
     );
 };
