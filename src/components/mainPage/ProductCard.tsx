@@ -22,8 +22,8 @@ export const ProductCard: React.FC<props> = (dataProp) => {
     return (
         <Link to={`/product/${data?.id}`} className="productCard">
             <div className="info">
-                <span>{data?.productPrice} </span>
-                <span>{data?.productName}</span>
+                <span className="price">{data?.productPrice} </span>
+                <span className="name">{data?.productName}</span>
             </div>
             <div className="img">
                 <img
