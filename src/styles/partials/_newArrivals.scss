@@ -30,9 +30,11 @@
                 height: 2.5em;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: left;
                 flex-direction: column;
                 margin-bottom: 0.5em;
+                color: $orange;
+                font-weight: 400;
             }
             .img {
                 border-radius: 1em;
