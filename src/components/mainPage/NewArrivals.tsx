@@ -1,5 +1,11 @@
 import React from 'react';
 
 export const NewArrivals = () => {
-    return <div>NewArrivals</div>;
+    return (
+        <div className="arrivals">
+            <div className="title">
+                New <span>Arrivals</span>
+            </div>
+        </div>
+    );
 };
