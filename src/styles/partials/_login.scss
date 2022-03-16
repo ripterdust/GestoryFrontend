@@ -65,6 +65,18 @@
                     color: #333;
                 }
             }
+
+            button {
+                width: 50%;
+                border: none;
+                background: $orange;
+                cursor: pointer;
+                padding: 0.5em 0;
+                font-weight: 600;
+                color: white;
+                font-size: 15px;
+                border-radius: 0.3em;
+            }
         }
     }
 }
