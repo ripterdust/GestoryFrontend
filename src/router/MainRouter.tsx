@@ -11,13 +11,15 @@ export const MainRouter: React.FC = () => {
     return (
         <div>
             <Nav />
-            <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/men" element={<Men />} />
-                <Route path="/woman" element={<Woman />} />
-                <Route path="/kids" element={<Kids />} />
-            </Routes>
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/men" element={<Men />} />
+                    <Route path="/woman" element={<Woman />} />
+                    <Route path="/kids" element={<Kids />} />
+                </Routes>
+            </div>
         </div>
     );
 };
