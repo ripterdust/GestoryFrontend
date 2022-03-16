@@ -5,7 +5,8 @@ export const Login = () => {
         <div className="login animate__animated animate__fadeIn">
             <div className="form">
                 <div className="title">
-                    Wellcome to <span>DressU</span>
+                    <i className="fa-solid fa-user"></i>
+                    Login
                 </div>
                 <form action="">
                     <div className="form-group">
