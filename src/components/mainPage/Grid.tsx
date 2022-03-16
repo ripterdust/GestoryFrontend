@@ -4,5 +4,5 @@ import { useFetch } from '../../hooks/useFetch';
 
 export const Grid = () => {
     const { data } = useFetch(getUrl(''));
-    return <div>Grid</div>;
+    return <div className="grid">Acá irá la gria asdf</div>;
 };
