@@ -6,8 +6,9 @@ export const Login = () => {
             <div className="form">
                 <div className="title">
                     <i className="fa-solid fa-user"></i>
-                    Login
+                    Wellcome to <span>Dress U</span>
                 </div>
+                <div className="subtitle">Sign in to continue</div>
                 <form action="">
                     <div className="form-group">
                         <i className="fa-solid fa-at"></i>
