@@ -22,16 +22,21 @@
         grid-template-columns: repeat(4, 1fr);
         column-gap: 3em;
         padding: 1em;
-        grid-template-rows: 50vh;
+        grid-template-rows: 55vh;
         row-gap: 2em;
         .productCard {
             overflow: hidden;
             .info {
-                height: 2em;
+                height: 2.5em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 0.5em;
             }
             .img {
                 border-radius: 1em;
-                height: calc(100% - 2em);
+                height: calc(100% - 3em);
                 overflow: hidden;
 
                 &:hover img {
