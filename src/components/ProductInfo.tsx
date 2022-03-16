@@ -30,6 +30,13 @@ export const ProductInfo = () => {
         }));
     };
 
+    const addCart = () => {
+        setState((state) => ({
+            ...state,
+            productId: data.id,
+        }));
+    };
+
     return (
         <div className="animate__animated animate__fadeIn productInfo">
             <div className="title">{data.productName}</div>
@@ -51,7 +58,7 @@ export const ProductInfo = () => {
                         <button onClick={() => handleSum(-1)}>-</button>
                         <span>{state.quantity}</span>
                         <button onClick={() => handleSum(1)}>+</button>
-                        <button>Add to cart</button>
+                        <button onClick={addCart}>Add to cart</button>
                     </div>
                     <div className="description">{data.productDescription}</div>
                 </div>
