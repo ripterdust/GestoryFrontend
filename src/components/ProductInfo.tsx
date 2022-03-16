@@ -55,10 +55,16 @@ export const ProductInfo = () => {
                 <div className="info">
                     <div className="price">{price}</div>
                     <div className="actions">
-                        <button onClick={() => handleSum(-1)}>-</button>
+                        <button onClick={() => handleSum(-1)}>
+                            <i className="fa-solid fa-minus"></i>
+                        </button>
                         <span>{state.quantity}</span>
-                        <button onClick={() => handleSum(1)}>+</button>
-                        <button onClick={addCart}>Add to cart</button>
+                        <button onClick={() => handleSum(1)}>
+                            <i className="fa-solid fa-plus"></i>
+                        </button>
+                        <button onClick={addCart}>
+                            <i className="fa-solid fa-cart-plus"></i>
+                        </button>
                     </div>
                     <div className="description">{data.productDescription}</div>
                 </div>
