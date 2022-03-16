@@ -21,7 +21,7 @@ export const Login = () => {
                         />
                     </div>
                     <div className="form-group">
-                        <i className="fa-solid fa-key"></i>
+                        <i className="fa-solid fa-lock"></i>
                         <input
                             type="password"
                             name="password"
