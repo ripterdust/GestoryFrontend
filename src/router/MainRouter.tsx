@@ -5,6 +5,7 @@ import { Nav } from '../components/Nav';
 import { Login } from '../components/Login';
 import { Men } from '../components/Men';
 import { Woman } from '../components/Woman';
+import { Kids } from '../components/Kids';
 
 export const MainRouter: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ export const MainRouter: React.FC = () => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/men" element={<Men />} />
                 <Route path="/woman" element={<Woman />} />
+                <Route path="/kids" element={<Kids />} />
             </Routes>
         </div>
     );
