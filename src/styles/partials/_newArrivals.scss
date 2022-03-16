@@ -6,10 +6,12 @@
     flex-direction: column;
     .title {
         color: $orange;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 900;
         text-transform: lowercase;
         letter-spacing: 2px;
+        margin-bottom: 5em;
+
         span {
             color: $dark;
         }
