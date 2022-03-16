@@ -6,6 +6,7 @@ import { Login } from '../components/Login';
 import { Men } from '../components/Men';
 import { Woman } from '../components/Woman';
 import { Kids } from '../components/Kids';
+import { Register } from '../components/Register';
 
 export const MainRouter: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ export const MainRouter: React.FC = () => {
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
                     <Route path="/men" element={<Men />} />
                     <Route path="/woman" element={<Woman />} />
                     <Route path="/kids" element={<Kids />} />
