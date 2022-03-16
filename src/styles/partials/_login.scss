@@ -79,7 +79,7 @@
             }
             button {
                 width: 50%;
-                border: none;
+                border: 1px solid $orange;
                 background: $orange;
                 cursor: pointer;
                 padding: 0.5em 0;
@@ -87,6 +87,18 @@
                 color: white;
                 font-size: 15px;
                 border-radius: 0.3em;
+
+                &:hover {
+                    background: white;
+                    color: $orange;
+                }
+            }
+
+            .link {
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    font-weight: 600;
+                }
             }
         }
     }

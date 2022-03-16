@@ -33,9 +33,13 @@ export const Login = () => {
                     <div className="forgot mb">
                         <Link to={'/forgot'}>Forgot password?</Link>
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" className="mb">
+                        Login
+                    </button>
+                    <Link to={'/register'} className="link">
+                        Create an account.
+                    </Link>
                 </form>
-                <Link to={'/register'}>Create an account.</Link>
             </div>
         </div>
     );
