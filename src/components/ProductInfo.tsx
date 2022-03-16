@@ -23,7 +23,7 @@ export const ProductInfo = () => {
     const intl = new Intl.NumberFormat(lang, options);
     const price = intl.format(data?.productPrice);
 
-    const hanldeClick = (sum: number) => {
+    const handleSum = (sum: number) => {
         setState((state) => ({
             ...state,
             quantity: state.quantity + sum < 0 ? 0 : state.quantity + sum,
@@ -48,9 +48,9 @@ export const ProductInfo = () => {
                 <div className="info">
                     <div className="price">{price}</div>
                     <div className="quantity">
-                        <button onClick={() => hanldeClick(-1)}>-</button>
+                        <button onClick={() => handleSum(-1)}>-</button>
                         <span>{state.quantity}</span>
-                        <button onClick={() => hanldeClick(1)}>+</button>
+                        <button onClick={() => handleSum(1)}>+</button>
                         <button>Add to cart</button>
                     </div>
                     <div className="description">{data.productDescription}</div>
