@@ -1,16 +1,32 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-export const useFetch = async ( url : string )  => {
-
-    const [ state, setState] = useState([]);
+export const useFetch = (url: string) => {
+    const [state, setState] = useState({
+        data: {},
+        err: false,
+    });
 
     useEffect(() => {
-        fetch( url )
-            .then(response => response.json())
-            .then(data => setState(data))
-        
-    }, [url])
-   
-    return [ state ];
+        fetch(url)
+            .then((res) => res.json())
+            .then((response) => {
+                setState((state) => {
+                    return {
+                        ...state,
+                        data: response,
+                        err: false,
+                    };
+                });
+            })
+            .catch((err) => {
+                setState((state) => {
+                    return {
+                        ...state,
+                        err: true,
+                    };
+                });
+            });
+    }, []);
 
-}
+    return state;
+};
