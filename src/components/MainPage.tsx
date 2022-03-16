@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { getUrl } from '../helpers/apiRoute';
-// import { useFetch } from '../hooks/useFetch';
 import coverWoman from '../assets/cover.jpg';
 import coverMan from '../assets/coverMan.jpg';
+import { NewArrivals } from './mainPage/NewArrivals';
 
 export const MainPage: React.FC = () => {
     return (
@@ -21,6 +20,8 @@ export const MainPage: React.FC = () => {
                         <div className="text">Men clothes</div>
                     </Link>
                 </div>
+
+                <NewArrivals />
             </div>
         </div>
     );
