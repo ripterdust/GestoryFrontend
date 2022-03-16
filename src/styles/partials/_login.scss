@@ -3,11 +3,34 @@
     justify-content: center;
     align-items: center;
     .form {
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: lowercase;
+            span {
+                color: $orange;
+            }
+        }
         form {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+            button {
+                border: none;
+                padding: 0.3em 1em;
+                background: $orange;
+                color: white;
+                font-size: 15px;
+                border-radius: 0.5em;
+                text-transform: lowercase;
+                cursor: pointer;
+
+                &:hover {
+                    background: darken($orange, 5%);
+                }
+            }
         }
     }
 }
