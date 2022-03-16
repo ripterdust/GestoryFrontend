@@ -17,6 +17,13 @@
             align-items: center;
             flex-direction: column;
 
+            .form-group {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             button {
                 border: none;
                 padding: 0.3em 1em;
