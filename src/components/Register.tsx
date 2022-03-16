@@ -51,7 +51,8 @@ export const Register = () => {
                         />
                     </div>
                     <div className="form-group mb">
-                        <select id="country" name="country">
+                        <i className="fa-solid fa-globe"></i>
+                        <select id="country" name="country" required>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
                             <option value="Algeria">Algeria</option>
