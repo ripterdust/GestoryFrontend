@@ -5,9 +5,9 @@ import { useFetch } from '../hooks/useFetch';
 
 export const ProductInfo = () => {
     const { id } = useParams();
-    const { data } = useFetch(getUrl(`product/${id}`));
-
-    console.log(data.productName);
+    const { data: response } = useFetch(getUrl(`product/${id}`));
+    const { data: array } = response;
+    console.log(array);
 
     return (
         <div className="animate__animated animate__fadeIn productInfo">
