@@ -7,7 +7,7 @@ export const ProductInfo = () => {
     // Hooks
     const [state, setState] = useState({
         productId: '',
-        quantity: 0,
+        quantity: 1,
         size: 'sm',
     });
 
@@ -26,7 +26,7 @@ export const ProductInfo = () => {
     const handleSum = (sum: number) => {
         setState((state) => ({
             ...state,
-            quantity: state.quantity + sum < 0 ? 0 : state.quantity + sum,
+            quantity: state.quantity + sum < 1 ? 1 : state.quantity + sum,
         }));
     };
 
