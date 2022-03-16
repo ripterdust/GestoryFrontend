@@ -1,4 +1,26 @@
 .productInfo {
     width: 100%;
-    overflow: hidden;
+    .title {
+        width: 100%;
+        font-size: 3em;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 0 1em 0;
+    }
+    .productGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+        .img {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5em;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
