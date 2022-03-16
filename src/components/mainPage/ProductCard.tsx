@@ -6,7 +6,7 @@ export interface dataType {
     productCategory?: string;
     productImage?: string;
     productName?: string;
-    productPrice?: number;
+    productPrice?: number | any;
     serialNumber?: string;
 }
 
@@ -19,10 +19,15 @@ export type props = {
 export const ProductCard: React.FC<props> = (dataProp) => {
     const { data } = dataProp;
 
+    const lang = navigator.language;
+    const options = { style: 'currency', currency: 'USD' };
+    const intl = new Intl.NumberFormat(lang, options);
+    const price = intl.format(data?.productPrice);
+
     return (
         <Link to={`/product/${data?.id}`} className="productCard">
             <div className="info">
-                <span className="price">{data?.productPrice} </span>
+                <span className="price">{price} </span>
                 <span className="name">{data?.productName}</span>
             </div>
             <div className="img">
