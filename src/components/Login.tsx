@@ -11,7 +11,7 @@ export const Login = () => {
                 <div className="subtitle">Sign in to continue</div>
                 <form action="">
                     <div className="form-group">
-                        <i className="fa-solid fa-at"></i>
+                        <i className="fa-solid fa-envelope"></i>
                         <input
                             type="email"
                             name="email"
