@@ -56,7 +56,9 @@ export const ProductInfo = () => {
                         <button onClick={() => handleSum(1)}>
                             <i className="fa-solid fa-plus"></i>
                         </button>
-                        <button onClick={() => addToCart(setState, data)}>
+                        <button
+                            onClick={() => addToCart(setState, data, state)}
+                        >
                             <i className="fa-solid fa-cart-plus"></i>
                         </button>
                     </div>
