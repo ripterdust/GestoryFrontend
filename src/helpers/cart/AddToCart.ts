@@ -4,7 +4,7 @@ interface dataInterface {
 
 interface stateInterface {
     quantity: number;
-    productId: string;
+    productId: string | undefined;
     size: string;
 }
 
@@ -19,9 +19,15 @@ export const addToCart = (
     }));
 
     const { cart } = localStorage;
-    console.log(JSON.parse(cart));
 
-    // if (state.productId != '') {
-    //     console.log('no hay producto');
-    // }
+    // Verifiying if the cart exists
+
+    const cartKeys = Object.keys(cart);
+    const find = cartKeys.find((element) => element == state.productId);
+
+    if (state.productId && !find && state.quantity) {
+        const { productId } = state;
+
+        console.log(productId);
+    }
 };

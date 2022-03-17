@@ -7,7 +7,7 @@ import { useFetch } from '../hooks/useFetch';
 export const ProductInfo = () => {
     // Hooks
     const [state, setState] = useState({
-        productId: '',
+        productId: undefined,
         quantity: 1,
         size: 'sm',
     });
