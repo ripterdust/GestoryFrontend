@@ -5,6 +5,7 @@ import { Product } from './cart/Product';
 export const Nav = () => {
     const login = false;
     const cart = JSON.parse(localStorage.cart);
+    const arrayOfKeys = Object.keys(cart);
     return (
         <nav>
             <Link to={'/'} className="logo">
@@ -27,11 +28,11 @@ export const Nav = () => {
                 <div className="cart">
                     <i className="fa-solid fa-basket-shopping"></i>
                     <div id="menu">
-                        <ul>
-                            <li>Producto</li>
-                            <li>Producot</li>
-                            <li>Producto</li>
-                        </ul>
+                        {arrayOfKeys.map((keyArray, index: number) => {
+                            if (index <= 3) {
+                                return <Product key={index} />;
+                            }
+                        })}
                     </div>
                 </div>
             </div>
