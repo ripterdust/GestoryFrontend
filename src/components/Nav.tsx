@@ -24,6 +24,13 @@ export const Nav = () => {
 
                 <div className="cart">
                     <i className="fa-solid fa-basket-shopping"></i>
+                    <div id="menu">
+                        <ul>
+                            <li>Producto</li>
+                            <li>Producot</li>
+                            <li>Producto</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div className="responsive">
