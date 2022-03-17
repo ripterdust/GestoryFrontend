@@ -18,16 +18,10 @@ export const addToCart = (
         productId: data.id,
     }));
 
-    const { cart } = localStorage;
-
-    // Verifiying if the cart exists
-
-    const cartKeys = Object.keys(cart);
-    const find = cartKeys.find((element) => element == state.productId);
-
-    if (state.productId && !find && state.quantity) {
-        const { productId } = state;
-
-        console.log(productId);
+    const cart = JSON.parse(localStorage.cart);
+    if (state.productId && state.quantity) {
+        const { productId, quantity } = state;
+        cart[productId] = { quantity };
+        localStorage.cart = JSON.stringify(cart);
     }
 };
