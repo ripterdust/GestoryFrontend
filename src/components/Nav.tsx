@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Nav = () => {
     const login = false;
+    const cart = JSON.parse(localStorage.cart);
     return (
         <nav>
             <Link to={'/'} className="logo">
