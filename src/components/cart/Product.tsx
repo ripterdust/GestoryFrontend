@@ -12,7 +12,7 @@ interface props {
 
 export const Product: React.FC<props> = ({ data }) => {
     return (
-        <div>
+        <div className="cart-item">
             <span className="name">{data.name}</span>
             <span className="price">{data.price}</span>
         </div>
