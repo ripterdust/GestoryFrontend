@@ -1,3 +1,7 @@
 export const formatePrice = (price: number) => {
-    return price;
+    const lang = navigator.language;
+    const options = { style: 'currency', currency: 'USD' };
+    const intl = new Intl.NumberFormat(lang, options);
+
+    return intl.format(price);
 };
