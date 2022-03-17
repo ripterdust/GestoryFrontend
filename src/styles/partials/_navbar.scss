@@ -58,7 +58,6 @@ nav {
                 right: 0;
                 transform: translateY(100%) translateX(10%);
                 background: white;
-                padding: 1em;
                 width: 370px;
                 display: none;
                 flex-direction: column;
@@ -77,11 +76,19 @@ nav {
                     }
                 }
                 .link {
-                    padding: 0.5em 0;
+                    padding: 1em 0;
                     text-align: center;
                     width: 100%;
-                    color: $orange;
+                    color: white;
                     font-weight: 600;
+                    background: lighten($orange, 20%);
+
+                    &:hover {
+                        background: lighten($orange, 10%);
+                    }
+                    &:active {
+                        background: $orange;
+                    }
                 }
             }
 
