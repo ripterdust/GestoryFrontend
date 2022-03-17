@@ -20,7 +20,7 @@ export const ProductInfo = () => {
     const { data: response } = useFetch(getUrl(`product/${id}`));
     const { data } = response;
     // Formating price
-    const price = formatePrice(data.price);
+    const price = formatePrice(data.productPrice);
 
     const handleSum = (sum: number) => {
         setState((state) => ({
