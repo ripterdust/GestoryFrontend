@@ -10,6 +10,6 @@ interface props {
     data: dataType;
 }
 
-export const Product: React.FC<props> = () => {
+export const Product: React.FC<props> = (data) => {
     return <div>Product</div>;
 };

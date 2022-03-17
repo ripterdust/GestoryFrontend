@@ -28,13 +28,15 @@ export const Nav = () => {
                 <div className="cart">
                     <i className="fa-solid fa-basket-shopping"></i>
                     <div id="menu">
-                        {arrayOfKeys.map((keyArray, index: number) => {
-                            console.log(index);
-                            if (index <= 3) {
-                                const data = cart[keyArray];
-                                return <Product key={index} data={data} />;
-                            }
-                        })}
+                        {arrayOfKeys.map(
+                            (keyArray, index: number) =>
+                                index <= 3 && (
+                                    <Product
+                                        key={index}
+                                        data={cart[keyArray]}
+                                    />
+                                )
+                        )}
                     </div>
                 </div>
             </div>
