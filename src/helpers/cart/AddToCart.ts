@@ -24,14 +24,14 @@ export const addToCart = (
     const cart = JSON.parse(localStorage.cart);
     if (state.productId) {
         const { productId, quantity } = state;
-        const { productName, productImage, productPrice } = data;
+        const { productName, productPrice } = data;
 
         const objectToSave = {
             quantity,
             name: productName,
-            image: productImage,
             price: productPrice,
         };
+
         cart[productId] = objectToSave;
         localStorage.cart = JSON.stringify(cart);
     }
