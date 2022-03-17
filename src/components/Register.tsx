@@ -413,7 +413,7 @@ export const Register = () => {
                         Register
                     </button>
                     <Link to={'/login'} className="link">
-                        All readdy have an account?
+                        All ready have an account?
                     </Link>
                 </form>
             </div>
