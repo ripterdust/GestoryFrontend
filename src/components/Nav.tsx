@@ -29,8 +29,9 @@ export const Nav = () => {
                     <i className="fa-solid fa-basket-shopping"></i>
                     <div id="menu">
                         {arrayOfKeys.map((keyArray, index: number) => {
+                            console.log(index);
                             if (index <= 3) {
-                                return <Product key={index} />;
+                                return <Product key={index} data={keyArray} />;
                             }
                         })}
                     </div>
