@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { QueueCart } from '../classes/QueueCart';
 import { getUrl } from '../helpers/apiRoute';
 import { useFetch } from '../hooks/useFetch';
 
@@ -29,6 +30,8 @@ export const ProductInfo = () => {
             quantity: state.quantity + sum < 1 ? 1 : state.quantity + sum,
         }));
     };
+
+    const queueCart = new QueueCart('12323', 123);
 
     const addCart = () => {
         setState((state) => ({
