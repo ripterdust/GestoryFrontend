@@ -31,7 +31,8 @@ export const Nav = () => {
                         {arrayOfKeys.map((keyArray, index: number) => {
                             console.log(index);
                             if (index <= 3) {
-                                return <Product key={index} data={keyArray} />;
+                                const data = cart[keyArray];
+                                return <Product key={index} data={data} />;
                             }
                         })}
                     </div>
