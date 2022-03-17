@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatePrice } from '../../helpers/formatePrice';
 
 interface dataType {
     name: string;
@@ -13,10 +14,7 @@ interface props {
 export const Product: React.FC<props> = ({ data }) => {
     const { name, price } = data;
 
-    const lang = navigator.language;
-    const options = { style: 'currency', currency: 'USD' };
-    const intl = new Intl.NumberFormat(lang, options);
-    const formatedPrice = intl.format(price);
+    const formatedPrice = formatePrice(price);
     return (
         <div className="cart-item">
             <span className="name">{name}</span>
