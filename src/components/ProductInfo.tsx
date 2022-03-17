@@ -30,12 +30,7 @@ export const ProductInfo = () => {
         }));
     };
 
-    const addCart = () => {
-        setState((state) => ({
-            ...state,
-            productId: data.id,
-        }));
-    };
+    const addCart = () => {};
 
     return (
         <div className="animate__animated animate__fadeIn productInfo">
