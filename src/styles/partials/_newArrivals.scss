@@ -11,6 +11,7 @@
         text-transform: lowercase;
         letter-spacing: 2px;
         margin-bottom: 3em;
+        text-align: center;
 
         span {
             color: $dark;
@@ -19,7 +20,6 @@
 
     .gridArrivals {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         column-gap: 3em;
         padding: 1em;
         grid-template-rows: repeat(2, 60vh);
@@ -58,5 +58,33 @@
                 }
             }
         }
+    }
+}
+
+//Pantallas grandes (desktops de menos de 1200px)
+@media (min-width: 991.98px) {
+    .gridArrivals {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+//Pantallas medianas (tablets de menos de 992px)
+@media (max-width: 991.98px) {
+    .gridArrivals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+//Pantallas pequeñas (móviles en landscape de menos de 768px)
+@media (max-width: 767.98px) {
+    .gridArrivals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+//Pantallas muy pequeñas (móviles en portrait de menos de 576px)
+@media (max-width: 575.98px) {
+    .gridArrivals {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
