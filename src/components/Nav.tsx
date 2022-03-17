@@ -28,15 +28,18 @@ export const Nav = () => {
                 <div className="cart">
                     <i className="fa-solid fa-basket-shopping"></i>
                     <div id="menu">
-                        {arrayOfKeys.map(
-                            (keyArray, index: number) =>
-                                index <= 3 && (
-                                    <Product
-                                        key={index}
-                                        data={cart[keyArray]}
-                                    />
-                                )
-                        )}
+                        <div className="items">
+                            {arrayOfKeys.map(
+                                (keyArray, index: number) =>
+                                    index <= 3 && (
+                                        <Product
+                                            key={index}
+                                            data={cart[keyArray]}
+                                        />
+                                    )
+                            )}
+                        </div>
+                        <Link to={'/cart'}>See all cart</Link>
                     </div>
                 </div>
             </div>
