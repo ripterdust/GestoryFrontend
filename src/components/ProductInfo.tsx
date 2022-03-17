@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getUrl } from '../helpers/apiRoute';
+import { addToCart } from '../helpers/cart/AddToCart';
 import { useFetch } from '../hooks/useFetch';
 
 export const ProductInfo = () => {
@@ -30,8 +31,6 @@ export const ProductInfo = () => {
         }));
     };
 
-    const addCart = () => {};
-
     return (
         <div className="animate__animated animate__fadeIn productInfo">
             <div className="title">{data.productName}</div>
@@ -57,7 +56,7 @@ export const ProductInfo = () => {
                         <button onClick={() => handleSum(1)}>
                             <i className="fa-solid fa-plus"></i>
                         </button>
-                        <button onClick={addCart}>
+                        <button onClick={() => addToCart(setState, data)}>
                             <i className="fa-solid fa-cart-plus"></i>
                         </button>
                     </div>
