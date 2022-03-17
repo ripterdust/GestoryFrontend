@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getUrl } from '../helpers/apiRoute';
 import { addToCart } from '../helpers/cart/AddToCart';
+import { formatePrice } from '../helpers/formatePrice';
 import { useFetch } from '../hooks/useFetch';
 
 export const ProductInfo = () => {
@@ -19,10 +20,7 @@ export const ProductInfo = () => {
     const { data: response } = useFetch(getUrl(`product/${id}`));
     const { data } = response;
     // Formating price
-    const lang = navigator.language;
-    const options = { style: 'currency', currency: 'USD' };
-    const intl = new Intl.NumberFormat(lang, options);
-    const price = intl.format(data?.productPrice);
+    const price = formatePrice(data.price);
 
     const handleSum = (sum: number) => {
         setState((state) => ({
