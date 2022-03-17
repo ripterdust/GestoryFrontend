@@ -1,5 +1,8 @@
 interface dataInterface {
     id: string;
+    productName: string;
+    productImage: any;
+    productPrice: number;
 }
 
 interface stateInterface {
@@ -19,9 +22,17 @@ export const addToCart = (
     }));
 
     const cart = JSON.parse(localStorage.cart);
-    if (state.productId && state.quantity) {
+    if (state.productId) {
         const { productId, quantity } = state;
-        cart[productId] = { quantity };
+        const { productName, productImage, productPrice } = data;
+
+        const objectToSave = {
+            quantity,
+            name: productName,
+            image: productImage,
+            price: productPrice,
+        };
+        cart[productId] = objectToSave;
         localStorage.cart = JSON.stringify(cart);
     }
 };
