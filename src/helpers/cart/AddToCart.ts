@@ -18,5 +18,9 @@ export const addToCart = (
         productId: data.id,
     }));
 
-    console.log('hola');
+    const cart = localStorage.getItem('cart');
+
+    // if (state.productId != '') {
+    //     console.log('no hay producto');
+    // }
 };
