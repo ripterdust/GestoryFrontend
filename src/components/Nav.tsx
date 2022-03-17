@@ -39,7 +39,9 @@ export const Nav = () => {
                                     )
                             )}
                         </div>
-                        <Link to={'/cart'}>See all cart</Link>
+                        <Link to={'/cart'} className="link">
+                            See all cart
+                        </Link>
                     </div>
                 </div>
             </div>
