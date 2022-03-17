@@ -69,10 +69,13 @@ nav {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-
+                    padding: 0 1em;
                     .cart-item {
-                        padding: 0.5em 1em;
+                        padding: 1em 3em;
                         width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                     }
                 }
                 .link {
