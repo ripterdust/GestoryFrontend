@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { formatePrice } from '../../helpers/formatePrice';
 
 export interface dataType {
     id: string;
@@ -19,10 +20,7 @@ export type props = {
 export const ProductCard: React.FC<props> = (dataProp) => {
     const { data } = dataProp;
 
-    const lang = navigator.language;
-    const options = { style: 'currency', currency: 'USD' };
-    const intl = new Intl.NumberFormat(lang, options);
-    const price = intl.format(data?.productPrice);
+    const price = formatePrice(data?.productPrice);
 
     return (
         <Link to={`/product/${data?.id}`} className="productCard">
