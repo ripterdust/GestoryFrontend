@@ -18,7 +18,8 @@ export const addToCart = (
         productId: data.id,
     }));
 
-    const cart = localStorage.getItem('cart');
+    const { cart } = localStorage;
+    console.log(JSON.parse(cart));
 
     // if (state.productId != '') {
     //     console.log('no hay producto');
