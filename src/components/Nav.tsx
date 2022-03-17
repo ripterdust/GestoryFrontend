@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Product } from './cart/Product';
 
 export const Nav = () => {
     const login = false;
