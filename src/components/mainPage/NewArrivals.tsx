@@ -3,7 +3,7 @@ import { getUrl } from '../../helpers/apiRoute';
 import { useFetch } from '../../hooks/useFetch';
 import { Grid } from './Grid';
 
-export const NewArrivals = () => {
+export const NewArrivals: React.FC = () => {
     const { data } = useFetch(getUrl(''));
     return (
         <div className="arrivals">
