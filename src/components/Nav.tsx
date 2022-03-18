@@ -14,7 +14,7 @@ export const Nav = () => {
             <div className="categories">
                 <Link to={'/gender/men'}>men</Link>
                 <Link to={'/gender/woman'}>Woman</Link>
-                <Link to={'/gender/kids'}>kids</Link>
+                <Link to={'/gender/kid'}>kids</Link>
             </div>
             <div className="utils">
                 {login ? (
