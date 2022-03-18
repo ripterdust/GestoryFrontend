@@ -12,9 +12,9 @@ export const Nav = () => {
                 <i className="fa-solid fa-bag-shopping"></i>
             </Link>
             <div className="categories">
-                <Link to={'/men'}>men</Link>
-                <Link to={'/woman'}>Woman</Link>
-                <Link to={'/kids'}>kids</Link>
+                <Link to={'/gender/men'}>men</Link>
+                <Link to={'/gender/woman'}>Woman</Link>
+                <Link to={'/gender/kids'}>kids</Link>
             </div>
             <div className="utils">
                 {login ? (
