@@ -1,10 +1,11 @@
 import React from 'react';
-import { getUrl } from '../../helpers/apiRoute';
-import { useFetch } from '../../hooks/useFetch';
 import { ProductCard } from './ProductCard';
 
-export const Grid = () => {
-    const { data } = useFetch(getUrl(''));
+interface componentType {
+    data: any;
+}
+export const Grid: React.FC<componentType> = ({ data }) => {
+    console.log(data.data);
     return (
         <div className="gridArrivals">
             {data.err ? (
