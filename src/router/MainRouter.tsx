@@ -3,10 +3,9 @@ import React from 'react';
 import { MainPage } from '../components/MainPage';
 import { Nav } from '../components/Nav';
 import { Login } from '../components/Login';
-import { Men } from '../components/Men';
-
 import { Register } from '../components/Register';
 import { ProductInfo } from '../components/ProductInfo';
+import { Gender } from '../components/Gender';
 
 export const MainRouter: React.FC = () => {
     return (
@@ -17,7 +16,7 @@ export const MainRouter: React.FC = () => {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/gender/:gender" element={<Men />} />
+                    <Route path="/gender/:gender" element={<Gender />} />
                     <Route path="/product/:id" element={<ProductInfo />} />
                 </Routes>
             </div>
