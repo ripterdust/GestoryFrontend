@@ -18,9 +18,7 @@ export const MainRouter: React.FC = () => {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/men" element={<Men />} />
-                    <Route path="/woman" element={<Woman />} />
-                    <Route path="/kids" element={<Kids />} />
+                    <Route path="/gender/:gender" element={<Men />} />
                     <Route path="/product/:id" element={<ProductInfo />} />
                 </Routes>
             </div>
