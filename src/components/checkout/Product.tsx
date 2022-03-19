@@ -1,5 +1,15 @@
 import React from 'react';
 
-export const Product = () => {
+interface checkoutProduct {
+    name: string;
+    price: number;
+    quantity: number;
+}
+
+interface prop {
+    data: checkoutProduct;
+}
+
+export const Product: React.FC<prop> = ({ data }) => {
     return <div>Product</div>;
 };
