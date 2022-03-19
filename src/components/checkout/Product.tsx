@@ -11,5 +11,5 @@ interface prop {
 }
 
 export const Product: React.FC<prop> = ({ data }) => {
-    return <div>Product</div>;
+    return <div className="checkout-product">{data.name}</div>;
 };
