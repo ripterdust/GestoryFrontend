@@ -6,8 +6,8 @@ import { useFetch } from '../hooks/useFetch';
 import { Grid } from './mainPage/Grid';
 
 export const Gender: React.FC = () => {
-    const context = useContext(ReloadContext);
-    console.log(context);
+    const [, setContext] = useContext(ReloadContext);
+    console.log(setContext);
     const { gender } = useParams();
     const { data } = useFetch(getUrl(`gender/${gender}`));
     return <Grid data={data} />;

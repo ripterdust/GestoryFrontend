@@ -1,3 +1,5 @@
 import { createContext } from 'react';
 
-export const ReloadContext = createContext(true);
+const context: Array<any> = [];
+
+export const ReloadContext = createContext(context);
