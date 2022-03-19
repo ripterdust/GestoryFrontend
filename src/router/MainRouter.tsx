@@ -6,6 +6,7 @@ import { Login } from '../components/Login';
 import { Register } from '../components/Register';
 import { ProductInfo } from '../components/ProductInfo';
 import { Gender } from '../components/Gender';
+import { Checkout } from '../components/Checkout';
 
 export const MainRouter: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ export const MainRouter: React.FC = () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="/gender/:gender" element={<Gender />} />
                     <Route path="/product/:id" element={<ProductInfo />} />
+                    <Route path="/checkout" element={<Checkout />} />
                 </Routes>
             </div>
         </div>
