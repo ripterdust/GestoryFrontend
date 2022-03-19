@@ -14,13 +14,15 @@ export const Checkout: React.FC = () => {
     let totalSaleAmount = 0;
     return (
         <div className="checkout">
-            <div className="items">
-                {cart.map((product: productType, key: number) => {
-                    totalSaleAmount += product.price * product.quantity;
-                    return <Product key={key} data={product} />;
-                })}
+            <div className="title">
+                <div>Photo</div>
+                <div>Quantity, item</div>
+                <div>Total</div>
             </div>
-            {totalSaleAmount}
+            {cart.map((product: productType, key: number) => {
+                totalSaleAmount += product.price * product.quantity;
+                return <Product key={key} data={product} />;
+            })}
         </div>
     );
 };
