@@ -7,6 +7,7 @@ import { Register } from '../components/Register';
 import { ProductInfo } from '../components/ProductInfo';
 import { Gender } from '../components/Gender';
 import { Checkout } from '../components/Checkout';
+import { Footer } from '../components/Footer';
 
 export const MainRouter: React.FC = () => {
     return (
@@ -22,6 +23,8 @@ export const MainRouter: React.FC = () => {
                     <Route path="/checkout" element={<Checkout />} />
                 </Routes>
             </div>
+
+            <Footer />
         </div>
     );
 };
