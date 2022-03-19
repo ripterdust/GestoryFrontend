@@ -1,3 +1,3 @@
 import { createContext } from 'react';
 
-export const useReloadContext = createContext(true);
+export const ReloadContext = createContext(true);
