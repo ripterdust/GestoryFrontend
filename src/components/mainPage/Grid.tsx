@@ -5,7 +5,6 @@ interface componentType {
     data: any;
 }
 export const Grid: React.FC<componentType> = ({ data }) => {
-    console.log(data.data);
     return (
         <div className="gridArrivals">
             {data.err ? (
