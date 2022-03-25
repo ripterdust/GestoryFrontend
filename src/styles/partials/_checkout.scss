@@ -11,11 +11,32 @@
         padding: 0 0 1em 0;
     }
     .checkout-product {
-        width: 100%;
+        width: 90%;
         padding: 1em 0;
         display: grid;
         grid-template-columns: 15% 70% 15%;
+        column-gap: 2em;
+        .image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 1.5em;
+            max-height: 70%;
+            img {
+                width: 100%;
+                transition: 0.3s ease-in-out;
+                transform: scale(1.2);
+            }
+
+            &:hover img {
+                transform: scale(1.25);
+            }
+        }
         div {
+            padding: 1em;
             width: 100%;
         }
     }
