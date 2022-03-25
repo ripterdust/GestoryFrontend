@@ -1,5 +1,11 @@
 import React from 'react';
 
 export const Footer = () => {
-    return <div className="footer">Footer</div>;
+    const date = new Date();
+
+    return (
+        <div className="footer">
+            © {date.getFullYear()} DressU o sus afiliados
+        </div>
+    );
 };
