@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatePrice } from '../../helpers/formatePrice';
 
 interface checkoutProduct {
     name: string;
@@ -12,6 +13,7 @@ interface prop {
 }
 
 export const Product: React.FC<prop> = ({ data }) => {
+    const price = formatePrice(data.price);
     return (
         <div className="checkout-product">
             <div className="image">
@@ -20,8 +22,12 @@ export const Product: React.FC<prop> = ({ data }) => {
                     alt="Red dot"
                 />
             </div>
-            <div>{data.name}</div>
-            <div>{data.price}</div>
+            <div className="checkout-info">
+                <span className="name">Product: {data.name}</span>
+                <span className="quantity">Quantity: {data.quantity}</span>
+                <button className="remove">Remove</button>
+            </div>
+            <div className="price">{price}</div>
         </div>
     );
 };

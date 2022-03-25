@@ -16,6 +16,38 @@
         display: grid;
         grid-template-columns: 15% 70% 15%;
         column-gap: 2em;
+        .price {
+            text-align: center;
+            font-size: 20px;
+        }
+        .checkout-info {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-bottom: 0.5em;
+            }
+            .name {
+                font-size: 20px;
+            }
+            .quantity {
+                color: $orange;
+                font-weight: 500;
+            }
+            .remove {
+                width: 120px;
+                border: 1px solid $orange;
+                background: none;
+                color: $orange;
+                padding: 1em;
+                border-radius: 1.5em;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    background: $orange;
+                    color: white;
+                }
+            }
+        }
         .image {
             width: 100%;
             display: flex;
