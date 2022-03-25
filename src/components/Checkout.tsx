@@ -1,5 +1,6 @@
 import React from 'react';
 import { getCartData } from './cart/getCartData';
+import { Check } from './checkout/Check';
 import { Product } from './checkout/Product';
 
 interface productType {
@@ -24,6 +25,7 @@ export const Checkout: React.FC = () => {
                 totalSaleAmount += product.price * product.quantity;
                 return <Product key={key} data={product} />;
             })}
+            <Check />
         </div>
     );
 };
