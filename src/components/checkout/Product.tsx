@@ -4,6 +4,7 @@ interface checkoutProduct {
     name: string;
     price: number;
     quantity: number;
+    image: any;
 }
 
 interface prop {
@@ -13,7 +14,7 @@ interface prop {
 export const Product: React.FC<prop> = ({ data }) => {
     return (
         <div className="checkout-product">
-            <div>Image</div>
+            <div>{data.image}</div>
             <div>{data.name}</div>
             <div>{data.price}</div>
         </div>
