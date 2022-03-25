@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import { MainPage } from '../components/MainPage';
 import { Nav } from '../components/Nav';
@@ -21,6 +21,7 @@ export const MainRouter: React.FC = () => {
                     <Route path="/gender/:gender" element={<Gender />} />
                     <Route path="/product/:id" element={<ProductInfo />} />
                     <Route path="/checkout" element={<Checkout />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </div>
 
