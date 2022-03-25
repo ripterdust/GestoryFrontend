@@ -15,6 +15,7 @@ a {
 .container {
     margin-top: 2em;
     padding: 0 2em;
+    min-height: 70vh;
 }
 // Navbar
 @import './partials/navbar';
