@@ -18,9 +18,9 @@ export const Check: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="check">
             <span>Total: {formatedTotal}</span>
-            <button onClick={buttonHandler}>Checkout</button>
+            <button onClick={buttonHandler}>Checkout!</button>
         </div>
     );
 };
