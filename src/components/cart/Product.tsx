@@ -5,6 +5,7 @@ interface dataType {
     name: string;
     price: number;
     quantity: number;
+    image: string;
 }
 interface props {
     key: number;
@@ -12,11 +13,14 @@ interface props {
 }
 
 export const Product: React.FC<props> = ({ data }) => {
-    const { name, price } = data;
+    const { name, price, image } = data;
 
     const formatedPrice = formatePrice(price);
     return (
         <div className="cart-item">
+            <span>
+                <img src={`data:image/png;base64, ${image}`} alt="" />
+            </span>
             <span className="name">{name}</span>
             <span className="price">{formatedPrice}</span>
         </div>
