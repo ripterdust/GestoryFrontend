@@ -14,7 +14,7 @@ interface prop {
 export const Product: React.FC<prop> = ({ data }) => {
     return (
         <div className="checkout-product">
-            <div>{data.image}</div>
+            <img src={`data:image/png;base64, ${data.image}`} alt="Red dot" />
             <div>{data.name}</div>
             <div>{data.price}</div>
         </div>
