@@ -18,9 +18,7 @@ export const Product: React.FC<props> = ({ data }) => {
     const formatedPrice = formatePrice(price);
     return (
         <div className="cart-item">
-            <span>
-                <img src={`data:image/png;base64, ${image}`} alt="" />
-            </span>
+            <img src={`data:image/png;base64, ${image}`} alt="" />
             <span className="name">{name}</span>
             <span className="price">{formatedPrice}</span>
         </div>
