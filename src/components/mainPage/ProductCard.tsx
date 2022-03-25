@@ -14,7 +14,6 @@ export interface dataType {
 export type props = {
     data?: dataType;
     key?: number;
-    id: string;
 };
 
 export const ProductCard: React.FC<props> = (dataProp) => {
