@@ -34,7 +34,7 @@ export const Login: React.FC = () => {
                         <i className="fa-solid fa-envelope"></i>
                         <input
                             type="email"
-                            name="email"
+                            name="mail"
                             placeholder="E-mail"
                             required
                             id="mail"
