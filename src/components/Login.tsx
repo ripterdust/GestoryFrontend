@@ -4,8 +4,13 @@ import { postForm } from '../helpers/account/postForm';
 
 export const Login: React.FC = () => {
     const [form, setForm] = useState({
-        email: '',
+        mail: '',
         password: '',
+    });
+
+    const [err, setErr] = useState({
+        err: false,
+        msg: '',
     });
 
     const handleInput = (e: any) => {
@@ -16,9 +21,11 @@ export const Login: React.FC = () => {
             [name]: value,
         }));
     };
-    const handleForm = (e: any) => {
+    const handleForm = async (e: any) => {
         e.preventDefault();
-        postForm(form);
+        const data = await postForm(form);
+
+        setErr(data);
     };
 
     return (
@@ -29,6 +36,7 @@ export const Login: React.FC = () => {
                     Wellcome to <span>Dress U</span>
                 </div>
                 <div className="subtitle">Sign in to continue</div>
+                {err && <div> {err.msg} </div>}
                 <form action="" onSubmit={handleForm}>
                     <div className="form-group mb">
                         <i className="fa-solid fa-envelope"></i>
