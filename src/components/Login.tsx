@@ -36,7 +36,7 @@ export const Login: React.FC = () => {
                     Wellcome to <span>Dress U</span>
                 </div>
                 <div className="subtitle">Sign in to continue</div>
-                <div className="error"> {err.msg} </div>
+                {err.err && <div className="error"> {err.msg} </div>}
                 <form action="" onSubmit={handleForm}>
                     <div className="form-group mb">
                         <i className="fa-solid fa-envelope"></i>
