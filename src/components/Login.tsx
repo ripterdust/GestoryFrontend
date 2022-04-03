@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { postForm } from '../helpers/account/postForm';
 
 export const Login: React.FC = () => {
     const [form, setForm] = useState({
@@ -18,6 +19,7 @@ export const Login: React.FC = () => {
     };
     const handleForm = (e: any) => {
         e.preventDefault();
+        postForm(form);
     };
 
     return (
