@@ -2,6 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    .error {
+        width: 100%;
+        padding: .5em;
+        text-align: center;
+        border: 1px solid $orange;
+        border-radius: 1em;
+        background: lighten($orange, 40%);
+        color: $orange;
+        margin-top: .5em;
+    }
     .form {
         display: flex;
         justify-content: center;
