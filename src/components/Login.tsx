@@ -47,6 +47,7 @@ export const Login: React.FC = () => {
                             required
                             id="mail"
                             onChange={handleInput}
+                            autoComplete="on"
                         />
                     </div>
                     <div className="form-group">
@@ -58,6 +59,7 @@ export const Login: React.FC = () => {
                             required
                             id="password"
                             onChange={handleInput}
+                            autoComplete="on"
                         />
                     </div>
                     <div className="forgot mb">

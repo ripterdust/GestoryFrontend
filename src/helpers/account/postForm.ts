@@ -8,4 +8,5 @@ export const postForm = async (formData: any) => {
     if (data.err) return data;
 
     console.log(data);
+    return data;
 };
