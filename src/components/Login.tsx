@@ -1,6 +1,25 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-export const Login = () => {
+
+export const Login: React.FC = () => {
+    const [form, setForm] = useState({
+        email: '',
+        password: '',
+    });
+
+    const handleInput = (e: any) => {
+        const { target } = e;
+        const { value, name } = target;
+        setForm((form) => ({
+            ...form,
+            [name]: value,
+        }));
+    };
+    const handleForm = (e: any) => {
+        e.preventDefault();
+    };
+
     return (
         <div className="login animate__animated animate__fadeIn">
             <div className="form">
@@ -9,7 +28,7 @@ export const Login = () => {
                     Wellcome to <span>Dress U</span>
                 </div>
                 <div className="subtitle">Sign in to continue</div>
-                <form action="">
+                <form action="" onSubmit={handleForm}>
                     <div className="form-group mb">
                         <i className="fa-solid fa-envelope"></i>
                         <input
@@ -17,7 +36,8 @@ export const Login = () => {
                             name="email"
                             placeholder="E-mail"
                             required
-                            id=""
+                            id="mail"
+                            onChange={handleInput}
                         />
                     </div>
                     <div className="form-group">
@@ -27,7 +47,8 @@ export const Login = () => {
                             name="password"
                             placeholder="Password"
                             required
-                            id=""
+                            id="password"
+                            onChange={handleInput}
                         />
                     </div>
                     <div className="forgot mb">
