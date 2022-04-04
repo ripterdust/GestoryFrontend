@@ -7,6 +7,11 @@ export const postForm = async (formData: any) => {
 
     if (data.err) return data;
 
-    console.log(data);
+    const { user, token } = data;
+
+    localStorage.user = JSON.stringify(user);
+    localStorage.token = JSON.stringify(token);
+
+    console.log(localStorage.token);
     return data;
 };
