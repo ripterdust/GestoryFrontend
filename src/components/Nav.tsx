@@ -16,6 +16,12 @@ export const Nav: React.FC = () => {
 
     const cart = JSON.parse(localStorage.cart);
     const arrayOfKeys = Object.keys(cart);
+
+    const logoutHandler = () => {
+        localStorage.removeItem('auth');
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+    };
     return (
         <nav>
             <Link to={'/'} className="logo">
@@ -30,7 +36,7 @@ export const Nav: React.FC = () => {
                 {login ? (
                     <div>
                         <Link to={'account'}>{data.user}</Link>
-                        <div className="logout">
+                        <div className="logout" onClick={logoutHandler}>
                             <i className="fa-solid fa-right-from-bracket"></i>
                         </div>
                     </div>
