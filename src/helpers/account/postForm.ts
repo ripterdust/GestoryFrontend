@@ -12,6 +12,5 @@ export const postForm = async (formData: any) => {
     localStorage.user = JSON.stringify(user);
     localStorage.token = JSON.stringify(token);
     localStorage.auth = JSON.stringify(auth);
-    console.log(localStorage.token);
     return data;
 };

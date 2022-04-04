@@ -2,8 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from './cart/Product';
 
-export const Nav = () => {
-    const login = false;
+interface dataInterface {
+    user?: string;
+}
+export const Nav: React.FC = () => {
+    let login = false;
+    let data: dataInterface = {};
+    if (localStorage.auth) {
+        login = true;
+
+        data = JSON.parse(localStorage.user);
+        console.log(data);
+    }
+
     const cart = JSON.parse(localStorage.cart);
     const arrayOfKeys = Object.keys(cart);
     return (
@@ -18,7 +29,12 @@ export const Nav = () => {
             </div>
             <div className="utils">
                 {login ? (
-                    'Bryan'
+                    <div>
+                        <Link to={'account'}>{data.user}</Link>
+                        <div className="logout">
+                            <i className="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                    </div>
                 ) : (
                     <Link to={'login'} className="user">
                         <i className="fa-solid fa-user"></i>
