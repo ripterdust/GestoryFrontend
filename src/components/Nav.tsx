@@ -12,7 +12,6 @@ export const Nav: React.FC = () => {
         login = true;
 
         data = JSON.parse(localStorage.user);
-        console.log(data);
     }
 
     const cart = JSON.parse(localStorage.cart);
